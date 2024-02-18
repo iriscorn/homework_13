@@ -1,0 +1,162 @@
+// media 375px
+@media screen and (min-width: 375px) {
+    .footer {
+        background: #F5F5FA;
+        padding: 30px 8%;
+        .footer-adress {
+            .address-link {
+                display: block;
+                color: #323264;
+                text-align: center;
+                &:hover {
+                    color: #24A3FF;
+                    transition: all .3s;
+                }
+            }
+            .point {
+                display: none;
+            }
+            .footer-adress__map {
+                display: block;
+                padding: 10px 0 21px;
+                text-align: center;
+                color: #24A3FF;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 0.75rem;
+                &:hover {
+                    color: #323264;
+                    transition: all .3s;
+                }
+            }
+        }
+        .footer-contacts {
+            .facebook-link {
+                display: block;
+                width: fit-content;
+                margin: 0 auto;
+                img {
+                    display: block;
+                }
+                &:hover {
+                    transform: scale(1.2);
+                    transition: all .3s;
+                }
+            }
+            .point {
+                display: none;
+            }
+            .phone-number {
+                display: block;
+                padding: 10px 0;
+                text-align: center;
+                font-weight: 700;
+                color: #46466E;
+                &:hover {
+                    color: #24A3FF;
+                    transition: all .3s;
+                }
+            }
+            .footer-email {
+                display: block;
+                text-align: center;
+                font-weight: 700;
+                color: #24A3FF;
+                &:hover {
+                    color: #323264;
+                    transition: all .3s;
+                }
+            }
+        }
+        .footer-item {
+            padding-top: 30px;
+            .footer-item__text {
+                display: block;
+                text-align: center;
+                color: #B3B3BA;
+            }
+        }
+        &::before {
+            display: block;
+            content: "";
+            width: 100%;
+            padding-top: 30px;
+            border-top: 2px solid #E6E6F0;
+        }
+    }
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px 8%;
+        .footer-adress {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            gap: 0 10px;
+            .point {
+                display: block;
+                width: 6px;
+            }
+            .footer-adress__map {
+                padding: 0;
+            }
+        }
+        .footer-contacts {
+            width: fit-content;
+            display: flex;
+            align-items: center;
+            order: 1;
+            gap: 0 10px;
+            padding-top: 21px;
+            .facebook-link {
+                img {
+                    display: block;
+                    width: 38px;
+                }
+            }
+            .point {
+                display: block;
+                width: 6px;
+            }
+            .phone-number {
+                padding: 0;
+            }
+        }
+        .footer-item {
+            display: flex;
+            justify-content: flex-end;
+            width: 50%;
+            padding-top: 0;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .footer {
+        padding: 0 6% 30px;
+    }
+    .footer-pading {
+        padding-top: 30px;
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .footer {
+        padding: 0 8% 30px;
+    }
+    .footer-pading {
+        padding-top: 30px;
+    }
+}

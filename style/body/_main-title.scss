@@ -1,0 +1,64 @@
+// media 375px
+@media screen and (min-width: 375px) {
+    .main-title {
+        .primary-title {
+            max-width: 315px;
+            margin: 0 auto;
+            padding: 129px 0 159px;
+            font-size: 2.375rem;
+            font-weight: 700;
+            text-align: center;
+        }
+        .btn {
+            padding-bottom: 30px;
+            display: block;
+            width: fit-content;
+            margin: 0 auto;
+            svg:hover path {
+                stroke: $primaryColor;
+                transition: all .3s;
+            }
+            svg:hover circle {
+                stroke: $primaryColor;
+                transition: all .3s;
+            }
+        }
+    }
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+    .main-title {
+        .primary-title {
+            max-width: 100%;
+            padding: 269px 0 417px;
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .main-title {
+        .primary-title {
+            padding: 245px 0 289px;
+        }
+    }
+}
+
+// media 1440px
+@media screen and (min-width: 1440px) {
+    .main-title {
+        .primary-title {
+            padding: 261px 0 305px;
+        }
+    }
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+    .main-title {
+        .primary-title {
+            padding: 361px 0 405px;
+        }
+    }
+}

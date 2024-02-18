@@ -1,0 +1,25 @@
+@import "tools";
+@import "global";
+
+// header
+@import "header/header-contacts";
+@import "header/header-logo";
+@import "header/header-menu";
+@import "header/header-menu-btn";
+
+// body
+@import "body/main-title";
+@import "body/oriented";
+@import "body/services";
+@import "body/team";
+@import "body/clients";
+@import "body/publications";
+
+// services-entry-page
+@import "body/intro";
+@import "body/services-in-this-area";
+@import "body/popup";
+
+
+// footer
+@import "footer/footer";

@@ -1,0 +1,22 @@
+// media 375px
+@media screen and (min-width: 375px) {
+    .menu-btn {
+        width: fit-content;
+        padding: 15px 4% 10px 0;
+        .menu-btn__img {
+            display: block;
+        }
+        &:hover {
+            cursor: pointer;
+            transform: scale(.9);
+            transition: all .3s;
+        }
+    }
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+    .menu-btn {
+        display: none;
+    }
+}

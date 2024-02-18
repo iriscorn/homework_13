@@ -1,0 +1,97 @@
+// media 375px
+@media screen and (min-width: 375px) {
+    .header-contacts {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 4%;
+        background: rgba(245, 245, 250, 0.20);
+        .language-selection {
+            display: flex;
+            align-items: center;
+            .language-selection__list {
+                .language-selection__link {
+                    display: block;
+                    letter-spacing: 1px;
+                    font-weight: 700;
+                    color: $mainColorWhite;
+                    font-size: 0.75rem;
+                    padding: 5px 7px;
+                    &:hover {
+                        transform: scale(1.1);
+                        transition: all .3s;
+                    }
+                }
+                &:nth-last-child(1) {
+                    border-radius: 8px;
+                    background-color: $primaryColor;
+                }
+            }
+        }
+        .contacts-wrapp {
+            .point {
+                display: none;
+            }
+            .address-link {
+                display: none;
+            }
+            .phone-number {
+                font-weight: 700;
+                color: $mainColorWhite;
+                &:hover {
+                    color: $primaryColor;
+                    transition: all .3s;
+                }
+            }
+            .facebook-link {
+                display: none;
+            }
+        }
+    }    
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+    .header-contacts {
+        justify-content: flex-start;
+        background: none;
+        padding: 0;
+        .contacts-wrapp {
+            display: flex;
+            align-items: center;
+            gap: 0 6px;
+            padding-left: 6px;
+            .point {
+                display: block;
+            }
+            .address-link {
+                display: block;
+                color: #B3B3BA;
+                &:hover {
+                    color: $mainColorWhite;
+                    transition: all .3s;
+                }
+            }
+            .facebook-link {
+                display: block;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: all .3s;
+                }
+                &:hover svg path {
+                    fill: $primaryColor;
+                    transition: all .3s;
+                }
+            }
+        }
+    } 
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .header-contacts {
+        justify-content: flex-end;
+        padding-bottom: 16px;
+    } 
+}

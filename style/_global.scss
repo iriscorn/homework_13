@@ -1,0 +1,140 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+// Reset
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+button,
+input,
+textarea {
+	outline: 0;
+	border: 0;
+	background: none;
+}
+
+textarea {
+	resize: none;
+}
+
+html {
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 400;
+	line-height: normal;
+	color: $mainColorWhite;
+	scroll-behavior: smooth;
+}
+
+// Global styles
+.main-bc {
+	background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+	border-radius: 0px 0px 12px 12px;
+}
+
+.symbol {
+	background: url(../imgs/symbol.png) no-repeat center;
+	background-size: auto 100%;
+}
+
+.arrow-link {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+	font-size: 0.875rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: $primaryColorMod;
+	&:hover {
+		color: $primaryColor;
+		transition: all .3s;
+	}
+	&:hover .arrow-link__img path {
+		stroke: $primaryColor;
+		transition: all .3s;
+	}
+}
+
+.services-entry-margin {
+	margin-top: 60px;
+}
+
+// media 375px
+@media screen and (min-width: 375px) {
+	.header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.after-services {
+		.after {
+			margin: 0 auto;
+			width: 89%;
+			height: 10px;
+			background: $specialColor;
+			border-radius: 0 0 12px 12px;
+		}
+		.after--small {
+			width: 79%;
+			background: $specialColorMod;
+		}
+	}
+}
+
+// media 768px
+@media screen and (min-width: 768px) {
+	.header {
+		padding: 50px 8% 0;
+	}
+
+	.after-services {
+		.after {
+			width: 95%;
+		}
+		.after--small {
+			width: 90%
+		}
+	}
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+	.header {
+		position: relative;
+	}
+
+	.after-services {
+		.after {
+			width: 96%;
+		}
+		.after--small {
+			width: 92%
+		}
+	}
+}
+
+// media 1920px
+@media screen and (min-width: 1920px) {
+	.header {
+		padding: 50px 8%;
+	}
+
+	.after-services {
+		.after {
+			width: 98%;
+		}
+		.after--small {
+			width: 96%
+		}
+	}
+}

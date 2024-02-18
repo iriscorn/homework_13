@@ -1,0 +1,97 @@
+// media 375px
+@media screen and (min-width: 375px) {
+    .popup {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #323264;
+        .popup__container {
+            width: 100%;
+            background-color: #F5F5FA;
+            padding: 30px 8%;
+            .popup__wrap {
+                display: flex;
+                gap: 0 6px;
+                justify-content: space-between;
+                align-items: flex-start;
+                .popup__title {
+                    font-size: 1.875rem;
+                    @include title;
+                }
+                .popup__exit-btn {
+                    background-color: #F5F5FA;
+                    &:hover {
+                        background-color: #E6E6F0;
+                        border-radius: 8px;
+                        transition: all .3s;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .popup__form {
+                .popup__form-element {
+                    font-family: Montserrat;
+                    background-color: $mainColorWhite;
+                    width: 100%;
+                    padding: 15px 4%;
+                    border-radius: 8px;
+                    margin-top: 15px;
+                    &::placeholder {
+                        color: $specialColorAdd;
+                    }
+                    &::-webkit-outer-spin-button,
+                    &::-webkit-inner-spin-button {
+                        -webkit-appearance: none;
+                    }
+                }
+                .popup__form-text {
+                    display: block;
+                    padding-top: 30px;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    color: $specialColorAdd;
+                }
+                .message {
+                    height: 130px;
+                    &::placeholder {
+                        line-height: initial;
+                    }
+                }
+            }
+            .popup__form-btn {
+                width: 100%;
+                margin-top: 30px;
+                background-color: $primaryColorMod;
+                padding: 18px 8%;
+                border-radius: 12px;
+                color: $mainColorWhite;
+                font-weight: 700;
+                font-size: 1rem;
+                &:hover {
+                    opacity: .7;
+                    transition: all .3s;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+// media 1024px
+@media screen and (min-width: 1024px) {
+    .popup {
+        height: 100vh;
+        .popup__container {
+            max-width: 650px;
+            border-radius: 12px;
+            .popup__wrap {
+                .popup__title {
+                    font-size: 2.375rem;
+                }
+            }
+        }
+    }
+}
